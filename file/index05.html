@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ポップアップ</title>
+  <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css" />
+  <link rel="stylesheet" href="../material/style.css">
+</head>
+
+<body>
+
+
+  <header>
+
+
+    <ul>
+      <li><a href="./index01.html">リンク縦</a></li>
+      <li><a href="./index02.html">リンク横</a></li>
+      <li><a href="./index03.html">フレーム埋め込み</a></li>
+      <li><a href="./index04.html">プルダウン</a></li>
+      <li><a href="./index05.html">ポップアップ</a></li>
+    </ul>
+
+
+  </header>
+
+
+
+  <h3>登録画面</h3>
+
+
+  <hr />
+
+
+
+  <form action="">
+
+    <label for="">ID</label>
+    <br />
+    <input type="email">
+
+    <br />
+
+    <label for="">PW</label>
+    <br />
+    <input type="password">
+
+    <br />
+
+    <input type="checkbox" />以下の規約に同意する <br>
+
+  </form>
+
+
+
+    <ul id="js-termset"></ul>
+
+    <div id="mask" class="hidden"></div>
+
+    <div id="modal" class="hidden">
+      <div id="js-term"></div>
+      <button id="js_close">閉じる</button>
+    </div>
+
+
+    <button>登録</button>
+
+
+
+  <hr />
+
+
+
+  <script src="../material/index.js"></script>
+  <script>
+    const corpoID = "CRP0000001";
+    const scrId = "SCR0000010";
+    document.addEventListener("DOMContentLoaded", dispTermset(corpoID, scrId));
+  </script>
+
+
+</body>
+
+</html>
